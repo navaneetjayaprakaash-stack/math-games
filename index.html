@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
-<body style="margin:0; overflow:hidden;">
-  <iframe src="https://www.kodub.com/apps/polytrack" style="width:100vw; height:100vh; border:none;"></iframe>
+<head>
+    <title>Math Games</title>
+</head>
+<body style="background-color: #111; color: white; font-family: sans-serif; text-align: center; padding-top: 20%;">
+    <h2>Loading Math Simulation...</h2>
+    <script>
+        // Opens the live multiplayer version in a clean, unblocked popup window
+        var gameWindow = window.open("https://www.kodub.com/apps/polytrack", "_blank", "width=1280,height=720");
+        
+        if (!gameWindow) {
+            document.body.innerHTML = "<h2>Pop-up blocked! Please allow pop-ups for this site to launch the game.</h2>";
+        }
+    </script>
 </body>
 </html>
